@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class PlusButton extends StatelessWidget {
   final function;
 
-  PlusButton({this.function});
+   PlusButton({this.function});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class PlusButton extends StatelessWidget {
           color: Colors.grey[500],
           shape: BoxShape.circle,
         ),
-        child: Center(
+        child: const Center(
           child: Text(
             '+',
             style: TextStyle(color: Colors.white, fontSize: 25),

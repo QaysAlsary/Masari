@@ -13,7 +13,7 @@ class GoogleSheetsApi {
   static final _gsheets = GSheets(_credentials);
   static Worksheet? _worksheet;
 
-  // some variables to keep track of..
+
   static int numberOfTransactions = 0;
   static List<List<dynamic>> currentTransactions = [];
   static bool loading = true;
@@ -56,7 +56,7 @@ class GoogleSheetsApi {
         ]);
       }
     }
-    print(currentTransactions);
+
     // this will stop the circular loading indicator
     loading = false;
   }
